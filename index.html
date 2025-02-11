@@ -1,72 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rupam Karmakar</title>
     <style>
-        table, th, td{
-            border: 1px solid black;
-            border-collapse: collapse;
-            padding: 10px;
-        }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .profile img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+      }
+
+      h1,
+      h3 {
+        text-align: center;
+      }
+
+      .projects h3 {
+        text-align: left;
+        display: inline-block;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.559); /* Adjust thickness and color as needed */
+        padding-bottom: 5px; /* Adds some spacing between text and underline */
+      }
+
+      .education table,
+      .skills table,
+      .experience table,
+      .achievements table {
+        border: none;
+        width: 100%;
+        border-collapse: collapse;
+        padding: 0;
+      }
+
+      .education table td,
+      .education table th,
+      .skills table td,
+      .skills table th {
+        border: none; /* Ensure no borders on table cells */
+        padding: 5px;
+      }
+
+      .experience table td,
+      .experience table th,
+      .achievements table td,
+      .achievements table th {
+        border: none; /* Ensure no borders on table cells */
+        padding: 1px;
+      }
+
+      .education table td:first-child,
+      .experience table td:first-child,
+      .achievements table td:first-child,
+      .achievements table td:first-child {
+        text-align: left; /* Align first column to the left */
+      }
+
+      .education table td:last-child,
+      .experience table td:last-child,
+      .achievements table td:last-child,
+      .achievements table td:last-child {
+        text-align: right; /* Align last column to the right */
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <div>
-            <img width="281.5"
-                src="https://media.licdn.com/dms/image/v2/C4E03AQEyGq8v_c63YQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1648710075128?e=1744848000&v=beta&t=B8G5JtSYPGkmyavh5j2vTPY5Ik1mLHgG5Pk_hA5ECbo"
-                alt="Rupam's profile picture">
-            <h1>Rupam Karmakar</h1>
-            
-            <p>I am a passionate <b>developer and tech enthusiast</b> with a strong interest in <b>web development and app
-            development</b>. Currently in my <b>final year of BTech</b>.
-            
-            I have experience in <b>Flutter development</b>, having built and integrated UI and APIs for multiple apps, including
-            <b>EduFy, Homies, Data Pulse and NeoScript</b>. My journey also includes an internship at <b>WestRoad</b>, where I developed <b>user
-            and employee apps</b>, implemented <b>attendance systems, leave management</b>, and worked with <b>REST APIs, GitHub, and
-            JIRA</b>.
-            
-            Let’s connect and build something amazing together! 🚀</p>
-        </div>
+      <script>
+        function downloadPDF() {
+          window.location.href =
+            "https://drive.google.com/uc?export=download&id=18aM_BiR529H396GtHTW2Evro8Y5cPlLX";
+        }
+      </script>
+
+      <div class="profile">
+        <img
+          width="281.5"
+          src="https://media.licdn.com/dms/image/v2/C4E03AQEyGq8v_c63YQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1648710075128?e=1744848000&v=beta&t=B8G5JtSYPGkmyavh5j2vTPY5Ik1mLHgG5Pk_hA5ECbo"
+          alt="Rupam's profile picture"
+        />
+        <h1>RUPAM KARMAKAR</h1>
+        <h3>+91 8583006460 ⋄ Barasat, WB, India</h3>
+        <h3>
+          <a href="mailto:rupamkarmakar1238@gmail.com"
+            >rupamkarmakar1238@gmail.com</a
+          >
+          ⋄
+          <a href="https://www.linkedin.com/in/rupam-karmakar-411157212/"
+            >LinkedIn</a
+          >
+          ⋄ <a href="https://github.com/hackeR200364">GitHub</a>
+        </h3>
+        <h3>
+          <a href="#education">Education</a> ⋄ <a href="#skills">Skills</a> ⋄
+          <a href="#experience">Experience</a> ⋄
+          <a href="#projects">Projects</a> ⋄
+          <a href="#achievements">Achievements</a> ⋄
+          <a href="#certifications">Certifications</a> ⋄
+          <button onclick="downloadPDF()">Download PDF</button>
+        </h3>
+        <!-- <p>
+          I am a passionate <b>developer and tech enthusiast</b> with a strong
+          interest in <b>web development and app development</b>. Currently in
+          my <b>final year of BTech</b>. I have experience in
+          <b>Flutter development</b>, having built and integrated UI and APIs
+          for multiple apps, including
+          <b>EduFy, Homies, Data Pulse and NeoScript</b>. My journey also
+          includes an internship at <b>WestRoad</b>, where I developed
+          <b>user and employee apps</b>, implemented
+          <b>attendance systems, leave management</b>, and worked with
+          <b>REST APIs, GitHub, and JIRA</b>. Let’s connect and build something
+          amazing together! 🚀
+        </p> -->
+      </div>
+
+      <div class="education" id="education">
+        <h2>EDUCATION</h2>
+        <hr />
         <table>
-            <colgroup>
-                <col span="1" style="background-color:antiquewhite;" />
-            </colgroup>
-            <tr style="background-color: bisque;">
-                <th>Sl. No.</th>
-                <th>Project Name</th>
-                <th>Project Link</th>
-                <th>Project Description</th>
-            </tr>
-            <tr>
-                <td>1.</td>
-                <td>Demo Resume</td>
-                <td><a href="https://hacker200364.github.io/full_stack_web_dev/VID-9%20(Project%201)/index.html">Link</a></td>
-                <td>This project is a basic resume webpage created using only <strong>HTML</strong>, showcasing a structured
-                    layout with sections for
-                    personal details, skills, experience, education, and projects. It provides a simple yet effective way to
-                    present
-                    professional information in a web-based format without using CSS frameworks or JavaScript, making it an
-                    ideal starting
-                    point for beginners learning HTML.</td>
-            </tr>
-            <tr>
-                <td>2.</td>
-                <td>Tribute to Dr. A.P.J. Abdul Kalam</td>
-                <td><a href="https://hacker200364.github.io/full_stack_web_dev/VID-10%20(Project%202)/index.html">Link</a></td>
-                <td>This project is a simple <strong>HTML-based</strong> tribute webpage dedicated to <strong>Dr. A.P.J. Abdul
-                        Kalam</strong>, highlighting his life,
-                    achievements, and inspirational quotes. It includes a structured timeline of significant events, an image
-                    section, and a
-                    collection of his motivational quotes. The page provides easy navigation through anchor links and a
-                    reference to an
-                    external source for more details. This project serves as a basic example of organizing and presenting
-                    biographical
-                    content using only HTML.</td>
-            </tr>
+          <tr>
+            <td>
+              <strong>Bachelor of Technology in Computer Science</strong>,
+              Techno International New Town<br />with 71.7%
+            </td>
+            <td>Aug 2021 - July 2025</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Higher Secondary Education</strong>, Barasat P.C.S Govt.
+              High School WBCHSE,<br />2021 with 79.6%
+            </td>
+            <td>2019 - 2021</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Secondary Education</strong>, Barasat P.C.S Govt. High
+              School WBBSE, 2019 with 80.71%
+            </td>
+            <td>2019</td>
+          </tr>
         </table>
+      </div>
+
+      <div class="skills" id="skills">
+        <h2>SKILLS</h2>
+        <hr />
+        <table>
+          <tr>
+            <td>
+              <strong>Technical Skills</strong>
+            </td>
+            <td>
+              C/C++, Flutter, Python, MySQL, OracleSQL, Java, NodeJS, JSON, API
+              Integration
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Soft Skills</strong>
+            </td>
+            <td>
+              Problem Solving, Adaptability, Time Management, Teamwork,
+              Leadership, Communication
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Language</strong>
+            </td>
+            <td>English, Bengali, Hindi</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="experience" id="experience">
+        <h2>EXPERIENCE</h2>
+        <hr />
+        <table>
+          <tr>
+            <td>
+              <strong>Flutter App Developer Intern</strong>
+            </td>
+            <td>Jan 2022 - July 2022</td>
+          </tr>
+          <tr>
+            <td>Westroad</td>
+            <td>Kolkata, WB, India</td>
+          </tr>
+        </table>
+        <ul>
+          <li>
+            Gained professional skills in teamwork, Git, Jira, Postman, REST
+            API, API testing, API integration, and JSON.
+          </li>
+          <li>
+            Developed the WestRoad User App with features for searching flats,
+            booking flats, and providing additional services using Flutter UI,
+            NodeJS backend, and MySQL database.
+          </li>
+          <li>
+            Contributed to the Employee App, implementing a leave management
+            system and a QR code scanning attendance system.
+          </li>
+        </ul>
+      </div>
+
+      <div class="projects" id="projects">
+        <h2>PROJECTS</h2>
+        <hr />
+        <h3>My Web Development Projects</h3>
+        <table>
+          <colgroup>
+            <col span="1" style="background-color: antiquewhite" />
+          </colgroup>
+          <tr style="background-color: bisque">
+            <th>Sl. No.</th>
+            <th>Project Name</th>
+            <th>Project Link</th>
+            <th>Project Description</th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td>Demo Resume</td>
+            <td>
+              <a
+                href="https://hacker200364.github.io/full_stack_web_dev/VID-9%20(Project%201)/index.html"
+                >Link</a
+              >
+            </td>
+            <td>
+              This project is a basic resume webpage created using only
+              <strong>HTML</strong>, showcasing a structured layout with
+              sections for personal details, skills, experience, education, and
+              projects. It provides a simple yet effective way to present
+              professional information in a web-based format without using CSS
+              frameworks or JavaScript, making it an ideal starting point for
+              beginners learning HTML.
+            </td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Tribute to Dr. A.P.J. Abdul Kalam</td>
+            <td>
+              <a
+                href="https://hacker200364.github.io/full_stack_web_dev/VID-10%20(Project%202)/index.html"
+                >Link</a
+              >
+            </td>
+            <td>
+              This project is a simple <strong>HTML-based</strong> tribute
+              webpage dedicated to <strong>Dr. A.P.J. Abdul Kalam</strong>,
+              highlighting his life, achievements, and inspirational quotes. It
+              includes a structured timeline of significant events, an image
+              section, and a collection of his motivational quotes. The page
+              provides easy navigation through anchor links and a reference to
+              an external source for more details. This project serves as a
+              basic example of organizing and presenting biographical content
+              using only HTML.
+            </td>
+          </tr>
+        </table>
+        <h3>My Projects</h3>
+        <p>
+          <strong>NeoScript.</strong> Developing a programming language based on
+          Simple English to help non-technical students learn programming. Built
+          with Swift, the language is continuously evolving with new features to
+          enhance accessibility and ease of learning for beginners.
+          <a href="https://github.com/Achivie/Neos">Link</a>
+        </p>
+        <p>
+          <strong>Data Pulse.</strong> Developed SQL Terminal, a web-based
+          MySQL/Oracle SQL terminal for the college's SQL lab, allowing students
+          to remotely execute SQL commands, view outputs, and interact with
+          databases in a seamless, user-friendly environment.
+          <a href="https://achivie.com/sql">Link</a> (Deployed),
+          <a href="https://github.com/Achivie/sql_terminal_source">Link</a>
+          (Source Code)
+        </p>
+        <p>
+          <strong>Homies.</strong> Developed Homies, an app designed to help
+          students and professionals find ideal housing and roommates by
+          analyzing lifestyle preferences. The app matches users with compatible
+          roommates and rental properties, enhancing the overall living
+          experience through tailored suggestions.
+          <a href="https://github.com/Achivie/homies_users_app">Link</a>
+        </p>
+      </div>
+
+      <div class="achievements" id="achievements">
+        <h2>ACHIEVEMENTS</h2>
+        <hr />
+        <table>
+          <tr>
+            <td>
+              <strong>Flutter Leader</strong>
+            </td>
+            <td>Sep 2022 - Aug 2023</td>
+          </tr>
+          <tr>
+            <td>Google Developer Student Club TINT</td>
+            <td>Kolkata, WB, India</td>
+          </tr>
+        </table>
+        <ul>
+          <li>
+            Gained strong skills in management, organization, teaching, public
+            speaking, and leadership through active involvement in the club.
+          </li>
+          <li>
+            Fostered positive relationships with juniors, seniors, and faculty,
+            contributing to a collaborative and supportive environment.
+          </li>
+        </ul>
+      </div>
+
+      <div class="education" id="certifications">
+        <h2>CERTIFICATIONS</h2>
+        <hr />
+        <table>
+          <tr>
+            <td>
+              <strong
+                >The Complete 2021 Flutter Development Bootcamp with
+                Dart</strong
+              >
+              <a
+                href="https://www.udemy.com/certificate/UC-51f0996b-785a-4989-9aa3-25a225d5d590/"
+                >Link</a
+              >
+            </td>
+            <td>June 2022</td>
+          </tr>
+          <tr>
+            <td>
+              <strong
+                >AWS APAC Solutions Architecture virtual experience program on
+                Forage</strong
+              >
+              <a
+                href="https://drive.google.com/file/d/1mk8V6IAcouFgmud4SYoy9vNxZHX4Q8mu/view"
+                >Link</a
+              >
+            </td>
+            <td>August 2024</td>
+          </tr>
+          <tr>
+            <td>
+              <strong
+                >AWS Academy Graduate - AWS Academy Cloud Foundations</strong
+              ><a
+                href="https://drive.google.com/file/d/1ZEsc833bgwULJR46ih9XCUbCYew9SMfj/view"
+                >Link</a
+              >
+            </td>
+            <td>December 2024</td>
+          </tr>
+        </table>
+      </div>
     </div>
-</body>
+  </body>
 </html>
