@@ -1,0 +1,50 @@
+/* Style by class name, it will be suppressed where ever it will be. Because there is style by id */
+.wrapper {
+  background-color: aquamarine;
+}
+
+/* Style by id. This will get priority*/
+#wrapper {
+  background-color: black;
+}
+
+#external {
+  background-color: white;
+}
+
+#external h1 {
+  color: blanchedalmond;
+  background-color: blue;
+}
+
+#external a {
+  text-decoration: none;
+}
+
+.message {
+  background-color: blueviolet;
+  color: aliceblue;
+}
+ul {
+  background-color: darkblue;
+  color: bisque;
+}
+
+ul li:hover {
+  background-color: aqua;
+  color: #000;
+}
+
+ul li:nth-child(3) {
+  background-color: black;
+  color: aqua;
+}
+
+ul li:nth-last-child(2) {
+  background-color: cadetblue;
+}
+
+ul li:nth-of-type(2n + 4) {
+  color: darkslategrey;
+  background-color: coral;
+}
